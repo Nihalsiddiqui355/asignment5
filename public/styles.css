@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.upload-container {
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.videos-container {
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.image-preview {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.icon-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.icon-buttons .icon-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: #fff;
+    border: none;
+}
+
+.upload-btn {
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    cursor: pointer;
+}
+
+.camera-btn {
+    background-color: #6a5acd;
+    cursor: pointer;
+}
+
+.upload-text {
+    color: #6c63ff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.upload-info {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+#camera-stream {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+#capture-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
