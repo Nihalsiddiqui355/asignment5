@@ -7,12 +7,11 @@
   <title>Image Upload UI</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-
   <div class="main-container">
-
     <div class="upload-container">
       <label for="file-upload" class="image-preview">
         <img id="preview-img" alt="Image Preview">
@@ -28,21 +27,21 @@
       <label for="file-upload" class="upload-text">Click or Drag-n-Drop</label>
       <input id="file-upload" type="file" accept="image/png, image/jpeg, image/gif" style="display: none;"
         onchange="previewImage(event)">
-
       <p class="upload-info">PNG, JPG or GIF, Up-to 2048 × 2048 px</p>
       <button id="capture-btn" style="display: none;" onclick="capturePhoto()">Capture</button>
-      <button class="icon-btn generate-btn" onclick="generateImage()">
-        Generate Gif
-      </button>
+
+      <button class="icon-btn generate-btn" onclick="generateImage()">Generate Gif</button>
     </div>
 
     <div class="videos-container">
       <h1>Preview-video</h1>
+      <div id="preview-container"></div> <!-- This will display the generated video/image -->
     </div>
-
   </div>
 
   <script src="script.js"></script>
+
+
 </body>
 
 </html>
